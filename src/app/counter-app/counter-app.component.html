@@ -1,0 +1,17 @@
+<div>
+  {{ myCounter }}
+
+  <section>
+    <button type="button" (click)="increaseValue()">Increament</button>
+    <button type="button" (click)="decreaseValue()">Decrement</button>
+    <button type="button" (click)="reset()">Reset</button>
+  </section>
+
+  <input type="number"  [formControl] = inputControls/>
+
+  <form [formGroup] = "formGroup">
+    <input type="number" formControlName = 'lumpSumValue'>
+    <button (click) = "lumpSumAmount()">Submit</button>
+  </form>
+
+</div>
